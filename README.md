@@ -18,9 +18,11 @@ To begin the pipeline from the given VCF file into the required JSON formatted f
 
 First cd into the GenomeBrowser/GenomeBrowser folder, where you will see the rest of the source code files.
 Then run the following command:
+    
     $python mkII.py [VCF input file]
 
 Example run with our provided example data file:
+    
     $python mkII.py data/example.vcf
 
 This process can take a couple of hours depending on the size of the VCF file and your internet speed. Average runs range from 2-3 hours for a 7 million line VCF file.
@@ -95,11 +97,10 @@ Each entry in the vcf file should follow the form...
     ...If the VCF entry has a header, all lines in the header must be 
     prefaced by the '#' symbol.
 
-    If you want to run the program from the interpreter or another python 
-    file, use the mineVCF() function. This function takes a single param, 
-    filename, which is the path/name of the vcf file you are trying to 
-    analyze.
-
+If you want to run the program from the interpreter or another python 
+file, use the mineVCF() function. This function takes a single param, 
+filename, which is the path/name of the vcf file you are trying to 
+analyze.
 
 
 This mkII.py program will produce a large number of files including.:
@@ -116,22 +117,22 @@ This mkII.py program will produce a large number of files including.:
     snpediaMap.json - 	
     The output file which contains all information found by mkII.
 
-    ...A large number of other temporary files will be generated and 
-    temporarily stored in the data folder. The program will remove all of 
-    these temp files before completion.
+...A large number of other temporary files will be generated and 
+temporarily stored in the data folder. The program will remove all of 
+these temp files before completion.
 
-    If you want to remove the local files for any reason, for example to 
-    ensure that you are getting the most up to date info from SNPedia, 
-    simply use the command line arguement 'clean' or call the cleanLocal() 
-    function. 
+If you want to remove the local files for any reason, for example to 
+ensure that you are getting the most up to date info from SNPedia, 
+simply use the command line arguement 'clean' or call the cleanLocal() 
+function. 
 
-    These local data files serve to speed up the program on repeated runs. 
-    The first run will take approximately two hours with a real VCF file. A 
-    second run with a different VCF file will take less time depending on 
-    how similar the genotypes for the two individuals are. For example, if 
-    you run an identical VCF, the program will take approximately a minute 
-    to complete. If use a different VCF file, in which this individual shares 
-    half of the SNP genotypes, the program will take aproximately an hour. 
+These local data files serve to speed up the program on repeated runs. 
+The first run will take approximately two hours with a real VCF file. A 
+second run with a different VCF file will take less time depending on 
+how similar the genotypes for the two individuals are. For example, if 
+you run an identical VCF, the program will take approximately a minute 
+to complete. If use a different VCF file, in which this individual shares 
+half of the SNP genotypes, the program will take aproximately an hour. 
 
 
 
