@@ -41,6 +41,8 @@ We built this application to easily browse and analyze important facts gathered 
 
 ## Installation
 
+Press the Download as Zip button on the right hand side of this page to download the entire package.
+
 Most Mac OS X systems come with python 2.7.x installed, this is an absolute requirement to run if you want to browse your own VCF File. If you don't have your own VCF File you can use ours, GenomeBrowser/GenomeBrowser/data/snpediaMap.json. Check the Alternate Options section for more information.
 To install the Xcode developer tools simply go to the Mac App Store and search for 'Xcode'. Download the application and installation will be very straight-forward. Make sure to let it install it's command line tools.
 To open the project simply open GenomeBrowser/ with Xcode and it should automatically find the project within.
