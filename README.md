@@ -117,7 +117,7 @@ This mkII.py program will produce a large number of files including.:
     snpediaMap.json - 	
     The output file which contains all information found by mkII.
 
-...A large number of other temporary files will be generated and 
+A large number of other temporary files will be generated and 
 temporarily stored in the data folder. The program will remove all of 
 these temp files before completion.
 
