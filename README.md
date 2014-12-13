@@ -9,7 +9,7 @@ The bundle first runs a set of Python instructions to read the given VCF file, t
 ## Requirements
 
 Python 2.7.x to run the mkII.py script.
-Mac OS X 10.8 or newer, with XCode installed. 
+Mac OS X 10.8 or newer, with Xcode installed. 
 Strong and reliable internet connection.
 
 ## Code Example
@@ -25,7 +25,7 @@ Example run with our provided example data file:
 
 This process can take a couple of hours depending on the size of the VCF file and your internet speed. Average runs range from 2-3 hours for a 7 million line VCF file.
 
-This will create a file named 'snpediaMap.json' in the GenomeBrowser/GenomeGenomeBrowser directory, which will be read by the XCode application as a database. Don't change the name of this file or the XCode project will not be able to find the data. Once the snpediaMap.json file is completed, open GenomeBrowser.xcodeproj with XCode and select Run from the Product menu (command + R) to build and run the application. A window will pop up soon after when the project is done loading.
+This will create a file named 'snpediaMap.json' in the GenomeBrowser/GenomeGenomeBrowser directory, which will be read by the Xcode application as a database. Don't change the name of this file or the Xcode project will not be able to find the data. Once the snpediaMap.json file is completed, open GenomeBrowser/GenomeBrowser.xcodeproj with Xcode and select Run from the Product menu (command + R) to build and run the application. A window will pop up soon after when the project is done loading.
 
 Note that the snpediaMap.json file is not formatted nicely, if you'd like to view it in standard JSON format you can run the following command:
     $python -mjson.tool snpediaMap.json
@@ -40,12 +40,12 @@ We built this application to easily browse and analyze important facts gathered 
 ## Installation
 
 Most Mac OS X systems come with python 2.7.x installed, this is an absolute requirement to run if you want to browse your own VCF File. If you don't have your own VCF File you can use ours, GenomeBrowser/GenomeBrowser/data/snpediaMap.json. Check the Alternate Options section for more information.
-To install the XCode developer tools simply go to the Mac App Store and search for 'XCode'. Download the application and installation will be very straight-forward. Make sure to let it install it's command line tools.
-To open the project simply open GenomeBrowser/ with XCode and it should automatically find the project within.
+To install the Xcode developer tools simply go to the Mac App Store and search for 'Xcode'. Download the application and installation will be very straight-forward. Make sure to let it install it's command line tools.
+To open the project simply open GenomeBrowser/ with Xcode and it should automatically find the project within.
 
 ## Additional Options
 
-If you do not have a VCF file to provide, you can pull the snpediaMap.json file from the GenomeBrowser/GenomeBrowser/data folder into the GenomeBrowser/GenomeBrowser directory and run the XCode applocation on our provided example data.
+If you do not have a VCF file to provide, you can pull the snpediaMap.json file from the GenomeBrowser/GenomeBrowser/data folder into the GenomeBrowser/GenomeBrowser directory and run the Xcode applocation on our provided example data.
 
 The bundled mkII.py will store data pulled from SNPedia locally in order to make future runs faster. If you want to remove those files for any reason, for example if you want to make sure you are getting the most up to date information from SNPedia, simply use the following command 
 
@@ -77,7 +77,7 @@ wikitools -
 mkII - 	This is written in python 2.7. It can be easily run from command line by 
 typing...
 
-Remaining Files - Any remaining files are part of the XCode project structure and should not be modified or edited without appropriate technical knowledge.
+Remaining Files - Any remaining files are part of the Xcode project structure and should not be modified or edited without appropriate technical knowledge.
 
    
 ##Additional Notes
